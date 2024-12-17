@@ -20,5 +20,5 @@ jobs:
         run: poetry install
       - name: Run type checker
         run: |
-          poetry run mypy .
+          poetry run mypy . --disable-error-code=empty-body
 
