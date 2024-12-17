@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7525d544-3b3a-4cfa-b7b8-4555a56267c5}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|VisualStudio|.venv</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="tests\__init__.py" />
+    <Compile Include="type_annotations\any.py" />
+    <Compile Include="type_annotations\await.py" />
+    <Compile Include="type_annotations\callable.py" />
+    <Compile Include="type_annotations\class-var.py" />
+    <Compile Include="type_annotations\decorator.py" />
+    <Compile Include="type_annotations\dict.py" />
+    <Compile Include="type_annotations\empty-tuple.py" />
+    <Compile Include="type_annotations\final.py" />
+    <Compile Include="type_annotations\generic.py" />
+    <Compile Include="type_annotations\generic2.py" />
+    <Compile Include="type_annotations\generic3.py" />
+    <Compile Include="type_annotations\instance-var.py" />
+    <Compile Include="type_annotations\kwargs.py" />
+    <Compile Include="type_annotations\list.py" />
+    <Compile Include="type_annotations\literal.py" />
+    <Compile Include="type_annotations\literalstring.py" />
+    <Compile Include="type_annotations\parameter.py" />
+    <Compile Include="type_annotations\return.py" />
+    <Compile Include="type_annotations\self.py" />
+    <Compile Include="type_annotations\tuple.py" />
+    <Compile Include="type_annotations\typealias.py" />
+    <Compile Include="type_annotations\typed-dict.py" />
+    <Compile Include="type_annotations\typed-dict2.py" />
+    <Compile Include="type_annotations\typed-dict3.py" />
+    <Compile Include="type_annotations\union.py" />
+    <Compile Include="type_annotations\unpack.py" />
+    <Compile Include="type_annotations\variable.py" />
+    <Compile Include="type_annotations\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="tests" />
+    <Folder Include="type_annotations" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|VisualStudio|.venv" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
