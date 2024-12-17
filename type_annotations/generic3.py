@@ -7,4 +7,4 @@ The type can only be int or subclasses of int.
 
 
 def add[T: int](a: T) -> T:
-    ...
+    pass

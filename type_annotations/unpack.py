@@ -13,6 +13,6 @@ class Person(TypedDict):
 
 
 def foo(**kwargs: Unpack[Person]):
-    ...
+    pass
 
 

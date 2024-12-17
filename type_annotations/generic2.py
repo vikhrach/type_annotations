@@ -7,6 +7,6 @@ The type can only be str or int.
 
 
 def add[T:(str,int)](a:T, b:T)->T:
-    ...
+    pass
 
 
