@@ -18,6 +18,9 @@ jobs:
           poetry-version: 1.8.4
       - name: Install dependencies
         run: poetry install
+      - name: Run linter flake8
+        run: |
+          poetry run flake8 --max-line-length=120
       - name: Run type checker
         run: |
           poetry run mypy . --disable-error-code=empty-body
